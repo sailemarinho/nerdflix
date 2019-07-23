@@ -1,0 +1,44 @@
+.navbar {
+  background: $black_nav;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 94.98%;
+  height: 75px;
+  display: flex;
+}
+
+.nav_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  .nav_list__item {
+    display: inline-block;
+    margin: 0px 28px;
+    font-size: 16px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+
+    .active {
+      border-bottom: 4px $red solid;
+      padding: 0 2px 23px;
+      opacity: 1;
+
+    }
+  }
+}
+
+
+.nerdflix_logo {
+  margin-left: -320px;
+}
+
+.star_logo {
+  margin-right: 15px;
+}

@@ -1,0 +1,14 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+body {
+  min-height: 100vh;
+  background-color: $black_body;
+  color: $white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
