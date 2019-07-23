@@ -1,2 +1,24 @@
 <%= render 'shared/navbar' %>
+<div class="sidebar">
+  <h3>Movies</h3>
+</div>
+
+<div class="container">
+  <% data = @movies.first[1] %>
+  <% movies_all = data.first[1]%>
+  <div class="row">
+  <% movies_all.each_with_index do |movie, index| %>
+    <% movies_all = data.first[1][index] %>
+    <% url = movies_all["urlPoster"] %>
+    <% title = movies_all["title"] %>
+    <% year = movies_all["year"]  %>
+      <div class="card d-flex m-5" style="width: 250px; height: 150px">
+        <%= image_tag (url) %>
+        <h2 style="color: black;"><%= title %></h2>
+        <h4 style="color: black;"><%= year %></h4>
+      </div>
+  <% end %>
+  </div>
+
+</div>
 
